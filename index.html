@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> <!--l'encoudage -->
+	<title> Pierre Papier Ciseaux </title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	 
+</head>
+<body>
+    <div class="box">
+        <button>Pierre</button>
+        <button>Papier</button>
+        <button>Ciseaux</button>
+    </div>
+    <div class = "resultat"></div>
+
+    <script>
+const buttons = document.querySelectorAll(".box button");
+ console.log(buttons); // recupere mes 3 nodelist button
+ 
+for (let i = 0; i < 3; i++ )
+{ 
+   buttons[i].addEventListener("click", 
+   function(){
+        const joueur =  buttons[i].innerHTML; // RECUPERE LA VALEUR DE CHAQUE BOUTON 
+        console.log(joueur);
+        const ordi = button[floor(Math.random()*3)].innerHTML; // recupere la valeur aleatoire de l'ordi
+        console.log(ordi);
+
+
+    } )
+   
+}
+
+
+
+    </script>
+    
+</body>
